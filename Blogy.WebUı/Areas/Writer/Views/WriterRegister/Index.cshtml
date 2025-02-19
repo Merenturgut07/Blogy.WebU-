@@ -1,0 +1,78 @@
+﻿@* @model Blogy.WebUI.Models.CreateRegisterViewModel *@
+@model CreateRegisterViewModel
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Yazar Kayıt Paneli</title>
+
+	<link rel="stylesheet" href="~/template/assets/vendors/mdi/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="~/template/assets/vendors/css/vendor.bundle.base.css">
+
+	<link rel="stylesheet" href="~/template/assets/css/style.css">
+
+	<link rel="shortcut icon" href="~/template/assets/images/favicon.png" />
+</head>
+<body>
+	<div class="container-scroller">
+		<div class="container-fluid page-body-wrapper full-page-wrapper">
+			<div class="row w-100 m-0">
+				<div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
+					<div class="card col-lg-4 mx-auto">
+						<div class="card-body px-5 py-5">
+							<h3 class="card-title text-left mb-3">Kayıt Olma İşlemi writerlogin</h3>
+
+							<form method="post">
+								<label> Adınız  </label>
+								<input type="text" class="form-control" asp-for="Name" />
+								<br />
+								<label> Soyadınız  </label>
+								<input type="text" class="form-control" asp-for="Surname" />
+								<br />
+								<label> Kullanıcı Adınız   </label>
+								<input type="text" class="form-control" asp-for="UserName" />
+								<br />
+								<label> Şifre  </label>
+								<input type="text" class="form-control" asp-for="Password" />
+								<br />
+								<label> Email  </label>
+								<input type="text" class="form-control" asp-for="Email" />
+								<br />
+								<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+								<br />
+								<button class="btn btn-info"> Kayıt Ol</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<script src="~/template/assets/vendors/js/vendor.bundle.base.js"></script>
+
+	<script src="~/template/assets/js/off-canvas.js"></script>
+	<script src="~/template/assets/js/hoverable-collapse.js"></script>
+	<script src="~/template/assets/js/misc.js"></script>
+	<script src="~/template/assets/js/settings.js"></script>
+	<script src="~/template/assets/js/todolist.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

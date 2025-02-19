@@ -1,0 +1,35 @@
+﻿@model WriterMessage
+@{
+    ViewData["Title"] = "SenderDetails";
+    Layout = "~/Areas/Writer/Views/WriterLayout/Index.cshtml";
+}
+
+<br />
+
+<div class="page-header">
+	<div class="main-panel">
+		<div class="col-lg-12 grid-margin stretch-card">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title">Gönderdiğim Mesajların Detayları </h4>
+					<br />
+					<form class="form-group">
+						@Html.HiddenFor(x => x.WriterMessageId, new { @class = "form-control" })
+						<br />
+						@Html.Label("Alıcı Adı")
+						@Html.TextBoxFor(x => x.ReceiverName, new { @class = "form-control" })
+						<br />
+						@Html.Label("Alıcı Mail")
+						@Html.TextBoxFor(x => x.Receiver, new { @class = "form-control" })
+						<br />
+						@Html.Label("Mesaj")
+						@Html.TextAreaFor(x => x.MessageContent, 10, 2, new { @class = "form-control" })
+						<br />
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

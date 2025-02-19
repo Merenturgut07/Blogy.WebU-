@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-card" style="background-color:#1abc9c">
+            <h3>@ViewBag.d1</h3>
+            <p>Toplam Yazar Sayısı</p>
+        </div>
+        <div class="dashboard-card" style="background-color:#2ecc71">
+            <h3>@ViewBag.d2</h3>
+            <p>Toplam Makale Sayısı</p>
+        </div>
+        <div class="dashboard-card" style="background-color:#3498db">
+            <h3>@ViewBag.d3</h3>
+            <p>Toplam Ziyaretçi Mesaj Sayısı </p>
+        </div>
+        <div class="dashboard-card" style="background-color:#9b59b6">
+            <h3>@ViewBag.d4</h3>
+            <p>Toplam Kategori Sayısı</p>
+        </div>
+    </div>
+
+
+    <div class="dashboard-container">
+        <div class="dashboard-card" style="background-color:#FF5733">
+            <h3>@ViewBag.d5</h3>
+            <p>Son Eklenen Makalenin Adı</p>
+        </div>
+        <div class="dashboard-card" style="background-color:#33FF57">
+            <h3>@ViewBag.d6</h3>
+            <p>En Son Mesaj Gönderen Kulllanıcı Adı</p>
+        </div>
+        <div class="dashboard-card" style="background-color:#3380FF">
+            <h3>@ViewBag.d7</h3>
+            <p>Son Eklenen Etiketin 3. Etiket Başlığı </p>
+        </div>
+        <div class="dashboard-card" style="background-color:#FF33A6">
+            <h3>@ViewBag.d8</h3>
+            <p>Toplam Yapılacak Liste  Sayısı</p>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="dashboard-card" style="background-color:#FFAA33">
+            <h3>@ViewBag.d9</h3>
+            <p>Yapılacak Listesi Son Başlık İsimi </p>
+        </div>
+        <div class="dashboard-card" style="background-color:#66CCFF">
+            <h3>@ViewBag.d10</h3>
+            <p>Sisteme Kayıt Olan Son Yazarın Kullanıcı Adı</p>
+        </div>
+        <div class="dashboard-card" style="background-color:#FF6699">
+            <h3>@ViewBag.d11</h3>
+            <p>Makalelere Son Yorum Atan Kullanıcının Adı Soyadı </p>
+        </div>
+        <div class="dashboard-card" style="background-color:#99CC33">
+            <h3>@ViewBag.d12</h3>
+            <p> Mesaj  tablosunda en çok alıcı olan kullanıcının maili  </p>
+        </div>
+    </div>
+
+
+
+    <style>
+        .dashboard-container {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .dashboard-card {
+            padding: 30px;
+            color: white;
+            border-radius: 10px;
+            width: 240px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

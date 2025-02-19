@@ -1,0 +1,40 @@
+﻿@using Blogy.WebUI.Controllers
+@model BlogSendContact
+
+
+<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+    <!-- Başarı mesajını göster -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <form action="/BlogContact/Index/" method="post">
+        <div class="row">
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" name="NameSurname" placeholder="Adınız Soyadınız">
+                <span asp-validation-for="NameSurname" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-3">
+                <input type="email" class="form-control" name="Mail" placeholder="Email Adresiniz">
+                <span asp-validation-for="Mail" class="text-danger"></span>
+            </div>
+            <div class="col-12 mb-3">
+                <input type="text" class="form-control" name="Subject" placeholder="Konu">
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="col-12 mb-3">
+                <textarea id="" cols="30" rows="7" name="Message" class="form-control" placeholder="Mesaj"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary">Mesaj Gönder</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+

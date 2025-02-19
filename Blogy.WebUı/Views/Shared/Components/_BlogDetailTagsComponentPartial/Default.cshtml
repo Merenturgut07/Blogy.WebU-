@@ -1,0 +1,17 @@
+﻿@model List<Tag>
+
+<div class="sidebar-box">
+    <h3 class="heading">Etiketler</h3>
+    @foreach (var item in Model)
+    {
+        <ul class="tags">
+            <li><a href="#">@item.TagTitle</a></li>
+            <li><a href="#">@item.Tag1</a></li>
+            <li><a href="#">@item.Tag2</a></li>
+            <li><a href="#">@item.Tag3</a></li>
+
+        </ul>
+    }
+
+</div>
+

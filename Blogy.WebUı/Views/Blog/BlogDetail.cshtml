@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "BlogDetail";
+    Layout = "~/Views/BlogLayout/Index.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+<body>
+	@await Component.InvokeAsync("_BlogDetailByCoverInfoComponentPartial", new { id = ViewBag.i })
+	<section class="section">
+		<div class="container">
+			<div class="row blog-entries element-animate">
+				<div class="col-md-12 col-lg-8 main-content">
+					@await Component.InvokeAsync("_BlogDetailByBlogContentComponenetPartial", new { id = ViewBag.i })
+					@await Component.InvokeAsync("_BlogDetailCommentComponentPartial", new { id = ViewBag.i })
+				</div>
+				<div class="col-md-12 col-lg-4 sidebar">
+					<div class="sidebar-box search-form-wrap">
+						<form action="#" class="sidebar-search-form">
+							<span class="bi-search"></span>
+							<input type="text" class="form-control" id="s" placeholder="Aranacak Kelimeyi Giriniz...">
+						</form>
+					</div>
+					@await Component.InvokeAsync("_BlogDetailByWriterInfoComponentPartial", new { id = ViewBag.i })
+					@*Burası Eksik Buna Bak @await Component.InvokeAsync("_BlogDetailGetOutherBlogPostByWriterComponentPartial") *@
+					@await Component.InvokeAsync("_BlogDetailCategoryListComponentPartial")  @* Eksikler Var Bak *@
+
+					@await Component.InvokeAsync("_BlogDetailTagsComponentPartial")
+				</div>
+			</div>
+		</div>
+	</section>
+	@await Component.InvokeAsync("_BlogDetailOtherPostComponentPartial")
+</body>
+</html>
+

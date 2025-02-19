@@ -1,0 +1,41 @@
+﻿@model List<Article>
+
+<div class="row ">
+	<div class="col-12 grid-margin">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Yazılan Son 5 Makale</h4>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+
+							<tr>
+								<th>#</th>
+								<th> Görsel </th>
+								<th> Başlık </th>
+								<th> Tarih </th>
+								<th> Açıklama </th>
+
+							</tr>
+
+						</thead>
+						@foreach (var item in Model)
+						{
+							<tbody>
+								<tr>
+									<td>@item.ArticleId</td>
+									<td> <img src="@item.CoverImageUrl" /> </td>
+									<td>@item.Title</td>
+									<td>@item.CreatedDate.ToString("dd MM yyyy")</td>
+									<td>@item.Description.Substring(0, 60)</td>
+
+								</tr>
+
+							</tbody>
+						}
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

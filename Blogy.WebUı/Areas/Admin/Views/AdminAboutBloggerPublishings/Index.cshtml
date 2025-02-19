@@ -1,0 +1,46 @@
+﻿@model List<BlogAboutBloggerPublishing>
+
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+	<div class="card">
+		<div class="card-body">
+			<h4 class="card-title">Bloger Yayıncılık Listesi</h4>
+
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th> # </th>
+							<th> Icon </th>
+							<th> Başlık  </th>
+							<th> Açıklama </th>
+							<th> Sil </th>
+							<th> Güncelle </th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td> @item.Id </td>
+								<td> @item.Icon </td>
+								<td> @item.Title </td>
+								<td> @item.Description.Substring(0,25) </td>
+								<td> <a href="/Admin/AdminAboutBloggerPublishings/DeleteBloggerPublishings/@item.Id" class="btn btn-danger">Sil</a></td>
+								<td> <a href="/Admin/AdminAboutBloggerPublishings/UpdateBloggerPublishings/@item.Id" class="btn btn-success">Güncelle</a></td>
+							</tr>
+						}
+					</tbody>
+				</table>
+				<br />
+				<a href="/Admin/AdminAboutBloggerPublishings/CreateBloggerPublishings/" class="btn btn-success">Yeni Bloger Yayıncılık Ekle</a>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,26 @@
+﻿@model BlogAboutService
+
+@{
+    ViewData["Title"] = "UpdateService";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card-header border-0">
+	<h3 class="mb-0">Kategori Ekleme İşlemi</h3>
+</div>
+<br />
+<form class="form-group" method="post">
+	<br />
+	<input type="hidden" asp-for="Id" />
+	<label> Servis Başlığı</label>
+	<input type="text" asp-for="Title" class="form-control" />
+	<br />
+	<label> Servis Açıklaması</label>
+	@Html.TextAreaFor(x => x.Description, 8, 2, new { @class = "form-control" })
+	<br />
+	<label> Servis İconu</label>
+	<input type="text" asp-for="Icon" class="form-control" />
+	<br />
+	<button class="btn btn-primary"> Kaydet </button>
+</form>
+

@@ -1,0 +1,25 @@
+﻿@model List<LayoutAbout>
+
+@foreach (var item in Model)
+{
+	<div class="col-lg-4">
+		<div class="widget">
+			<h3 class="mb-4">@item.Title</h3>
+			<p> @item.Description   </p>
+		</div>
+
+		<!-- /.widget -->
+		<div class="widget">
+			<h3>Sosyal Medya</h3>
+			<ul class="list-unstyled social">
+				<li><a href="#"><span class="icon-instagram"></span></a></li>
+				<li><a href="#"><span class="icon-twitter"></span></a></li>
+				<li><a href="#"><span class="icon-facebook"></span></a></li>
+				<li><a href="#"><span class="icon-linkedin"></span></a></li>
+				<li><a href="#"><span class="icon-pinterest"></span></a></li>
+				<li><a href="#"><span class="icon-dribbble"></span></a></li>
+			</ul>
+		</div> <!-- /.widget -->
+	</div>
+
+}

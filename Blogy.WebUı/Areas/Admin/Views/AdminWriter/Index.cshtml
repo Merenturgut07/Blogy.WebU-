@@ -1,0 +1,51 @@
+﻿@model List<WriterTable>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+<div class="col-lg-12 grid-margin stretch-card">
+	<div class="card">
+		<div class="card-body">
+			<h4 class="card-title">Yazar Listesi</h4>
+
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col" class="sort" data-sort="name">#</th>
+							<th scope="col" class="sort" data-sort="status">Yazar İsimi</th>
+							<th scope="col" class="sort" data-sort="status">Yazar Soyisimi</th>
+							<th scope="col" class="sort" data-sort="status">Yazar Açıklama</th>
+							<th scope="col" class="sort" data-sort="status">Yazar Görsel</th>
+							<th scope="col" class="sort" data-sort="status">Yazar Mail</th>
+							<th scope="col" class="sort" data-sort="status">Yazar Kullanıcı Adı</th>
+							<th scope="col" class="sort" data-sort="status">Sil</th>
+							<th scope="col" class="sort" data-sort="status">Güncelle</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td>@item.WriterTableId </td>
+								<td>@item.Name </td>
+								<td>@item.Surname </td>
+								<td>@item.Description </td>
+								<td><img src="@item.ImageUrl" /></td>
+								<td>@item.Mail </td>
+								<td>@item.UserName </td>
+								<td><a href="/Admin/AdminWriter/DeleteWriter/@item.WriterTableId" class="btn btn-danger">Sil</a> </td>
+								<td><a href="/Admin/AdminWriter/UpdateWriter/@item.WriterTableId" class="btn btn-success">Güncelle</a> </td>
+							</tr>
+						}
+					</tbody>
+				</table>
+				<a href="/Admin/AdminWriter/CreateWriter/Index/" class="btn btn-info">Yeni Yazar Ekle</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+

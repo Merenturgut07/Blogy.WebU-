@@ -1,0 +1,19 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "CategoryUpdate";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Kategori Güncelleme İşlemi</h3>
+</div>
+<br />
+<form class="forms-sample" method="post">
+    @Html.HiddenFor(x => x.CategoryId)
+    @Html.Label("Kategori Adı")
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-info">Kaydet</button>
+</form>
+

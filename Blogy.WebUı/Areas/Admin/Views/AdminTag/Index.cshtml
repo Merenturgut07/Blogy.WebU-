@@ -1,0 +1,50 @@
+﻿@model List<Tag>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Etiket Listeleme </h4>
+
+            <div class="table-responsive">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th> # </th>
+                            <th> Başlık </th>
+                            <th> Etiket 1  </th>
+                            <th> Etiket 2 </th>
+                            <th> Etiket 3 </th>
+                            <th> Sil </th>
+                            <th> Güncelle </th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td> @item.TagId </td>
+                                <td> @item.TagTitle </td>
+                                <td> @item.Tag1 </td>
+                                <td> @item.Tag2 </td>
+                                <td> @item.Tag3 </td>
+                                <td> <a href="/Admin/AdminTag/DeleteTag/@item.TagId" class="btn btn-danger">Sil</a> </td>
+                                <td> <a href="/Admin/AdminTag/UpdateTag/@item.TagId" class="btn btn-success">Güncelle</a> </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Admin/AdminTag/CreateTag/" class="btn btn-success">Yeni Etiket Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>
+

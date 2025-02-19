@@ -1,0 +1,45 @@
+﻿@model List<Article>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+	<div class="col">
+		<div class="card bg-default shadow">
+			<div class="card-header bg-transparent border-0">
+				<h3 class="text-white mb-0">Yazılan Makaleler</h3>
+			</div>
+			<div class="table-responsive">
+				<table class="table align-items-center table-dark table-flush">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col" class="sort" data-sort="name">ID</th>
+							<th scope="col" class="sort" data-sort="budget">Başlık</th>
+							<th scope="col" class="sort" data-sort="status">Yayınlanma Tarih</th>
+							<th scope="col" class="sort" data-sort="status">Açıklama</th>
+							<th scope="col" class="sort" data-sort="status">Görsel</th>
+							<th scope="col" class="sort" data-sort="status">Sil</th>
+
+						</tr>
+					</thead>
+					<tbody class="list">
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td>@item.ArticleId </td>
+								<td>@item.Title </td>
+								<td>@item.CreatedDate.ToString("dd MMMM yyyy") </td>
+								<td>@item.Description.Substring(0, 20) </td>
+								<td> <img src="@item.CoverImageUrl" width="65" height="35" /> </td>
+								<td><a href="/Admin/AdminArticle/DeleteArticle/@item.ArticleId" class="btn btn-danger">Sil</a> </td>
+								</tr>
+						}
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+

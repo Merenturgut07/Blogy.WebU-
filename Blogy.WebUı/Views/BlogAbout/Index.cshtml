@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/BlogLayout/Index.cshtml";
+}
+<!doctype html>
+<html lang="en">
+
+<body>
+	@await Component.InvokeAsync("_BlogAboutHeadComponentPartial")
+	 @await Component.InvokeAsync("_BlogAboutPictureOrDescriptionComponentPartial") 
+	 @await Component.InvokeAsync("_BlogAboutServiceComponentPartial")
+	@await Component.InvokeAsync("_BlogAboutBloggerPublishingComponentPartial")
+
+
+
+
+</body>
+</html>
+
+

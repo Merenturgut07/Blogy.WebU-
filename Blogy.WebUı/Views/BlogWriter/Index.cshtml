@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/BlogLayout/Index.cshtml";
+}
+
+<div class="section">
+	<div class="container">
+		 
+		<div class="row mb-5">
+			<div class="col-lg-5 mx-auto text-center" data-aos="fade-up">
+				<h2 class="heading text-primary">Yazarlarımız</h2>
+				<p>
+					Yazarlarımız, çeşitli alanlarda derin bilgiye sahip ve bu bilgi birikimlerini blogumuzun içeriklerine yansıtarak, her yazısında okuyucularına değerli bilgiler sunuyor. Her biri, kendi uzmanlık alanlarında deneyim kazanmış profesyoneller olup, özgün bakış açıları ve titizlikle yapılan araştırmalarla yazılarını oluşturuyor.
+				</p>
+			</div>
+		</div>
+
+		@await Component.InvokeAsync("_BlogWriterComponentPartial")
+		
+
+	</div>
+</div>
+

@@ -1,0 +1,23 @@
+﻿@model ToDoList
+
+@{
+    ViewData["Title"] = "UpdateToDoList";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card-header border-0">
+	<h3 class="mb-0">Yapılacak Liste Güncelleme İşlemi</h3>
+</div>
+<br />
+<form class="form-group" method="post">
+	<input type="hidden" asp-for="ToDoListId" class="form-control" />
+	<br />
+	<label> Yapılacak Liste </label>
+	<input type="text" asp-for="Description" class="form-control" />
+	<br />
+	<label> Tarihi </label>
+	<input type="text" asp-for="Date" class="form-control" />
+	<br />
+	<button class="btn btn-primary"> Kaydet </button>
+</form>
+

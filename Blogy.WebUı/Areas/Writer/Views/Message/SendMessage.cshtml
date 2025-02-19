@@ -1,0 +1,32 @@
+﻿@model WriterMessage
+@{
+    ViewData["Title"] = "SendMessage";
+    Layout = "~/Areas/Writer/Views/WriterLayout/Index.cshtml";
+}
+
+<div class="page-header">
+	<div class="main-panel">
+		<div class="col-lg-12 grid-margin stretch-card">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title">Yeni  Mesaj Gönderme Sayfası  </h4>
+					<br />
+					<form class="form-group" method="post">
+						<br />
+						@Html.Label("Alıcı Mail")
+						@Html.TextBoxFor(x => x.Receiver, new { @class = "form-control" })
+						<br />
+						@Html.Label("Konu")
+						@Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+						<br />
+						@Html.Label("Mesaj")
+						@Html.TextAreaFor(x => x.MessageContent, 10, 3, new { @class = "form-control" })
+						<br />
+						<button class="btn btn-outline-primary">Gönder</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

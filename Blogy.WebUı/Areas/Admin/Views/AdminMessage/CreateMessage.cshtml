@@ -1,0 +1,24 @@
+﻿@model WriterMessage
+@{
+	ViewData["Title"] = "CreateMessage";
+	Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card-header border-0">
+	<h3 class="mb-0">Yeni Mesaj Gönderme Paneli</h3>
+</div>
+<br />
+<form class="form-group" method="post">
+	<br />
+	<label> Konu</label>
+	<input type="text" asp-for="Subject" class="form-control" />
+	<br />
+	<label> Alıcı </label>
+	<input type="text" asp-for="Receiver" class="form-control" />
+	<br />
+	<label> Mesaj  </label>
+	@Html.TextAreaFor(x => x.MessageContent, 8, 2, new { @class = "form-control" })
+	<br />
+	<button class="btn btn-primary"> Gönder </button>
+</form>
+

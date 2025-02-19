@@ -1,0 +1,75 @@
+﻿@* <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /> *@
+
+
+<div class="row">
+	<div class="col-sm-12 mt-3">
+		<h4><b>İstatistik Tablosu</b></h4>
+	</div>
+	<div class="col-12 col-lg-12 stretch-card grid-margin">
+		<div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+			<div class="card bg-warning">
+				<div class="card-body px-3 py-4">
+					<div class="d-flex justify-content-between align-items-start">
+						<div class="color-card">
+							<p class="mb-0 color-card-head">Blog Sayısı</p>
+							<h2 class="text-white">
+								@ViewBag.v1
+							</h2>
+						</div>
+						<i class="card-icon-indicator mdi mdi-basket bg-inverse-icon-warning"></i>
+					</div>
+					<h6 class="text-white">Tüm zamanlar</h6>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+			<div class="card bg-danger">
+				<div class="card-body px-3 py-4">
+					<div class="d-flex justify-content-between align-items-start">
+						<div class="color-card">
+							<p class="mb-0 color-card-head">Kategori Sayısı</p>
+							<h2 class="text-white">
+								@ViewBag.v2
+							</h2>
+						</div>
+						<i class="card-icon-indicator mdi mdi-cube-outline bg-inverse-icon-danger"></i>
+					</div>
+					<h6 class="text-white">Tüm zamanlar</h6>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3 pb-lg-0 pb-xl-3">
+			<div class="card bg-primary">
+				<div class="card-body px-3 py-4">
+					<div class="d-flex justify-content-between align-items-start">
+						<div class="color-card">
+							<p class="mb-0 color-card-head">Gelen Mesaj Sayısı</p>
+							<h2 class="text-white">
+								@ViewBag.v3
+							</h2>
+						</div>
+						<i class="card-icon-indicator mdi mdi-briefcase-outline bg-inverse-icon-primary"></i>
+					</div>
+					<h6 class="text-white">Tüm zamanlar</h6>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3 pb-lg-0 pb-xl-3">
+			<div class="card bg-success">
+				<div class="card-body px-3 py-4">
+					<div class="d-flex justify-content-between align-items-start">
+						<div class="color-card">
+							<p class="mb-0 color-card-head">Giden Mesaj Sayısı</p>
+							<h2 class="text-white">
+								@ViewBag.v4
+							</h2>
+						</div>
+						<i class="card-icon-indicator mdi mdi-message-text bg-inverse-icon-primary"></i>
+					</div>
+					<h6 class="text-white">Tüm zamanlar</h6>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

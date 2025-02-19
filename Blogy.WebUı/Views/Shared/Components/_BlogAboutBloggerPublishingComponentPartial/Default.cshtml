@@ -1,0 +1,38 @@
+﻿
+@model List<BlogAboutBloggerPublishing>
+
+<div class="section">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-7 mb-4 mb-lg-0">
+				<img src="~/blogy-1.0.0/images/img_7_sq.jpg" alt="Image" class="img-fluid rounded
+					">
+			</div>
+			<div class="col-lg-4 ps-lg-2">
+				<div class="mb-5">
+					<h2 class="text-black h4">Profesyonel blogcular için yayın platformu.</h2>
+					<p> Profesyonel blogcular için yayın platformu, içeriklerinizi kolayca oluşturup yönetebileceğiniz, geniş kitlelere ulaşmanızı sağlayan bir araçtır. </p>
+				</div>
+
+				@foreach (var item in Model)
+				{
+					<div class="d-flex mb-3 service-alt">
+						<div>
+							<span class="@item.Icon"></span>
+						</div>
+						<div>
+							<h3> @item.Title  </h3>
+							<p> @item.Description </p>
+						</div>
+					</div>
+				}
+
+				
+
+
+
+			</div>
+
+		</div>
+	</div>
+</div>

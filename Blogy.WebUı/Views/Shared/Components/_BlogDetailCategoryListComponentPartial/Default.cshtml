@@ -1,0 +1,13 @@
+﻿@model List<Category>
+
+
+
+<div class="sidebar-box">
+	<h3 class="heading">Makale Kategorileri</h3>
+	<ul class="categories">
+		@foreach (var item in Model)
+		{
+			<li><a href="#">@item.CategoryName </a></li>
+		}
+	</ul>
+</div>
