@@ -43,3 +43,8 @@
 # Sonuç
 
 ### - Blogy projesi, modern web teknolojileriyle hazırlanmış, yönetimi kolay, kullanıcı dostu ve güvenli bir blog platformudur. Hem admin hem de yazarlar için ayrı panellerle iş akışını kolaylaştırırken, zengin özellikleri ile içerik üretimi ve yönetimini etkin hale getirmektedir. Eğitim sürecimde edindiğim deneyimleri bu proje aracılığıyla pekiştirmiş ve gerçek dünya uygulamalarına uygun bir çözüm geliştirmiş oldum.
+
+# Ana Sayfa 
+
+
+
