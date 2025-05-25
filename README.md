@@ -46,5 +46,10 @@
 
 # Ana Sayfa 
 
+![Image](https://github.com/user-attachments/assets/0aee4370-c811-403b-82d2-5e3cf1461bdb)
+![Image](https://github.com/user-attachments/assets/e21903dd-ca4b-4b2c-b165-07a2bc98a51a)
+![Image](https://github.com/user-attachments/assets/7dd1f785-9036-401a-bdb6-e7e6339d2c2c)
+![Image](https://github.com/user-attachments/assets/dff4a677-2375-4a33-a9bd-d3a26d8e8ef7)
+
 
 
