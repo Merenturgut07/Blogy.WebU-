@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace Blogy.BussinessLayer.Abstract
 {
-	public interface ICommentService:IGenericService<Comment>
-	{
-		List<Comment> TGetCommentByArticleId(int id);
-	}
+    public interface ICommentService : IGenericService<Comment>
+    {
+        List<Comment> TGetCommentByArticleId(int id);
+
+        public List<Comment> TGetListCommentWithArticle();
+
+    }
 }

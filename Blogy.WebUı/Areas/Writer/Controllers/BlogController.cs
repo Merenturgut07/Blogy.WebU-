@@ -29,8 +29,6 @@ namespace Blogy.WebUI.Areas.Writer.Controllers
 		{
 			var user = await _userManager.FindByNameAsync(User.Identity.Name);
 
-			//ViewBag.id = user.Id + " " + user.Name + " " +user.Surname;
-
 			var values= _articleService.TGetArticlesByWriter(user.Id);
 
 			return View(values);
@@ -57,7 +55,7 @@ namespace Blogy.WebUI.Areas.Writer.Controllers
 		{
 			var user = await _userManager.FindByNameAsync(User.Identity.Name);
 			article.AppUserId=user.Id;
-			article.WriterId = 1;
+			article.WriterId = user.Id;
 			article.CreatedDate = DateTime.Now;
 			_articleService.TInsert(article);
 			return RedirectToAction("MyBlogList");

@@ -3,12 +3,17 @@
 @model IPagedList<Article>
 
 
+@{
+    ViewData["Title"] = "GetBlogSearchByName";
+    Layout = "~/Views/BlogLayout/Index.cshtml";
+}
+
 
 <section class="section">
 	<div class="container">
 		<div class="row mb-4">
 			<div class="col-sm-6">
-				<h2 class="posts-entry-title">Blog Listesi</h2>
+				<h2 class="posts-entry-title">Tur rotası arama sayfası </h2>
 			</div>
 		</div>
 		<div class="row">
@@ -35,3 +40,5 @@
 </section>
 
 @Html.PagedListPager((IPagedList)Model, page => Url.Action("BlogList", new { page }))
+
+

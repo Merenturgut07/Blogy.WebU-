@@ -8,7 +8,7 @@
 <!doctype html>
 <html lang="en">
 <body>
-    @await Component.InvokeAsync("_BlogListComponentPartial")
+    @await Component.InvokeAsync("_BlogListComponentPartial", new { page = ViewBag.Page })
 </body>
 </html>
 

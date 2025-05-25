@@ -2,6 +2,7 @@
 using Blogy.DataAccesLayer.Context;
 using Blogy.DataAccesLayer.Repository;
 using Blogy.EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,9 @@ namespace Blogy.DataAccesLayer.EntityFramework
             return values;
         }
 
-
+        public List<Comment> GetListCommentWithArticle()
+        {
+            return context.Comments.Include(x => x.Articles).ToList();
+        }
     }
 }

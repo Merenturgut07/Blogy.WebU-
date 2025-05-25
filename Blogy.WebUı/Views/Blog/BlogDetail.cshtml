@@ -23,8 +23,8 @@
 						</form>
 					</div>
 					@await Component.InvokeAsync("_BlogDetailByWriterInfoComponentPartial", new { id = ViewBag.i })
-					@*Burası Eksik Buna Bak @await Component.InvokeAsync("_BlogDetailGetOutherBlogPostByWriterComponentPartial") *@
-					@await Component.InvokeAsync("_BlogDetailCategoryListComponentPartial")  @* Eksikler Var Bak *@
+					@await Component.InvokeAsync("_BlogDetailGetOutherBlogPostByWriterComponentPartial", new { id = ViewBag.i })
+					@await Component.InvokeAsync("_BlogDetailCategoryListComponentPartial") 
 
 					@await Component.InvokeAsync("_BlogDetailTagsComponentPartial")
 				</div>

@@ -1,12 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Blogy.BussinessLayer.Abstract;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Blogy.WebUI.ViewComponents.BlogDetailsViewComponents
 {
     public class _BlogDetailGetOutherBlogPostByWriterComponentPartial:ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly IArticleService _articleService;
+
+        public _BlogDetailGetOutherBlogPostByWriterComponentPartial(IArticleService articleService)
         {
-            return View();
+            _articleService = articleService;
+        }
+
+        public IViewComponentResult Invoke(int id)
+        {
+            var values = _articleService.TGetLast3BlogByAppUser(id);
+            return View(values);
         }
     }
 }

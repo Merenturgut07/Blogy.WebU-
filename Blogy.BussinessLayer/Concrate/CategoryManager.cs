@@ -1,5 +1,6 @@
 ﻿using Blogy.BussinessLayer.Abstract;
 using Blogy.DataAccesLayer.Abstract;
+using Blogy.DtoLayer.CategoryDtos;
 using Blogy.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,12 @@ namespace Blogy.BussinessLayer.Concrate
 			return _categoryDal.GetCategoryCount();
 		}
 
-		public List<Category> TGetListAll()
+        public List<ResultCategoryWithCountDto> TgetCategoryWithCountDtos()
+        {
+            return _categoryDal.getCategoryWithCountDtos();
+        }
+
+        public List<Category> TGetListAll()
 		{
 			return _categoryDal.GetListAll();
 		}

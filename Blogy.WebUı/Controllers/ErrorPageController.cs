@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Blogy.WebUI.Areas.Admin.Controllers
+namespace Blogy.WebUI.Controllers
 {
-    public class AdminLoginController : Controller
+    public class ErrorPageController : Controller
     {
         public IActionResult Index()
         {

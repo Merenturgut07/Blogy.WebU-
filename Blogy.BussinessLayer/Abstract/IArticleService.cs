@@ -15,5 +15,7 @@ namespace Blogy.BussinessLayer.Abstract
 		WriterTable TGetWriterInfoByArticleWriter(int id);
 
 		List<Article> TGetArticlesByWriter(int id);
-	}
+		List<Article> TGetLast3BlogByAppUser(int id);
+
+    }
 }

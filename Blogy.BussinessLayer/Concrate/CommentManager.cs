@@ -25,7 +25,7 @@ namespace Blogy.BussinessLayer.Concrate
 
 		public Comment TGetById(int id)
 		{
-			throw new NotImplementedException();
+			return _commentDal.GetById(id);
 		}
 
 		public List<Comment> TGetCommentByArticleId(int id)
@@ -33,7 +33,7 @@ namespace Blogy.BussinessLayer.Concrate
 			return _commentDal.GetCommentByArticleId(id);
 		}
 
-		public List<Comment> TGetListAll()
+        public List<Comment> TGetListAll()
 		{
 			throw new NotImplementedException();
 		}
@@ -43,9 +43,14 @@ namespace Blogy.BussinessLayer.Concrate
             throw new NotImplementedException();
         }
 
+        public List<Comment> TGetListCommentWithArticle()
+        {
+           return _commentDal.GetListCommentWithArticle();
+        }
+
         public void TInsert(Comment entity)
 		{
-			throw new NotImplementedException();
+			_commentDal.Insert(entity);
 		}
 
 		public void TUpdate(Comment entity)

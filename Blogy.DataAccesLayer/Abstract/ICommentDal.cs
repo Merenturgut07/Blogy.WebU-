@@ -10,5 +10,7 @@ namespace Blogy.DataAccesLayer.Abstract
 	public interface ICommentDal:IGenericDal<Comment>
 	{
 		List<Comment> GetCommentByArticleId(int id);
-	}
+        public List<Comment> GetListCommentWithArticle();
+
+    }
 }

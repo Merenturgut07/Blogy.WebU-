@@ -4,6 +4,7 @@ using Blogy.DataAccesLayer.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blogy.DataAccesLayer.Migrations
 {
     [DbContext(typeof(BlogyContext))]
-    partial class BlogyContextModelSnapshot : ModelSnapshot
+    [Migration("20250331103510_mig_comment_imageurl")]
+    partial class mig_comment_imageurl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -362,9 +364,6 @@ namespace Blogy.DataAccesLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
 
-                    b.Property<int>("AppUserId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ArticleId")
                         .HasColumnType("int");
 
@@ -391,8 +390,6 @@ namespace Blogy.DataAccesLayer.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("CommentId");
-
-                    b.HasIndex("AppUserId");
 
                     b.HasIndex("ArticleId");
 
@@ -714,19 +711,11 @@ namespace Blogy.DataAccesLayer.Migrations
 
             modelBuilder.Entity("Blogy.EntityLayer.Concrete.Comment", b =>
                 {
-                    b.HasOne("Blogy.EntityLayer.Concrete.AppUser", "AppUser")
-                        .WithMany()
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Blogy.EntityLayer.Concrete.Article", "Articles")
                         .WithMany("Comments")
                         .HasForeignKey("ArticleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("AppUser");
 
                     b.Navigation("Articles");
                 });

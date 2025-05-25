@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Blogy.DtoLayer\Blogy.DtoLayer.csproj" />
     <ProjectReference Include="..\Blogy.EntityLayer\Blogy.EntityLayer.csproj" />
   </ItemGroup>
 

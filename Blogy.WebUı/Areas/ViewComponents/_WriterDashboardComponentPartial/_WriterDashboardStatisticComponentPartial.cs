@@ -8,12 +8,10 @@ namespace Blogy.WebUI.Areas.ViewComponents._WriterDashboardComponentPartial
     public class _WriterDashboardStatisticComponentPartial : ViewComponent
     {
         private readonly UserManager<AppUser> _userManager;
-        private readonly BlogyContext _blogyContext;
 
-        public _WriterDashboardStatisticComponentPartial(UserManager<AppUser> userManager, BlogyContext blogyContext)
+        public _WriterDashboardStatisticComponentPartial(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
-            _blogyContext = blogyContext;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()

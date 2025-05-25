@@ -14,7 +14,7 @@ namespace Blogy.WebUI.ViewComponents.BlogDetailsViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var values = _categoryService.TGetListAll();
+            var values = _categoryService.TgetCategoryWithCountDtos();
             return View(values);
         }
     }

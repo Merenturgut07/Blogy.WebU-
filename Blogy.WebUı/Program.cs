@@ -82,6 +82,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Cookie.HttpOnly = true;
     options.ExpireTimeSpan = TimeSpan.FromMinutes(150000);
+    options.AccessDeniedPath = "/ErrorPage/Index/";
     options.LoginPath = "/Writer/WriterLogin/Index/";
 });
 
@@ -96,6 +97,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Index/");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

@@ -1,5 +1,7 @@
 ﻿using Blogy.BussinessLayer.Abstract;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
+using X.PagedList.Extensions;
 
 namespace Blogy.WebUI.ViewComponents
 {
@@ -12,9 +14,9 @@ namespace Blogy.WebUI.ViewComponents
 			_articleService = articleService;
 		}
 
-		public IViewComponentResult Invoke()
+		public IViewComponentResult Invoke(int page=1)
 		{
-			var values=_articleService.TGetArticleWithWriter();
+			var values=_articleService.TGetArticleWithWriter().ToPagedList(page,6);
 			return View(values);
 		}
 	}
