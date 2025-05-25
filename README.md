@@ -58,8 +58,17 @@
 
 <br/>
 
-# Hakkımızda
+# Blog Detayları Sayfası
 <br/>
+
+![Image](https://github.com/user-attachments/assets/25d7aa75-b297-4a11-b40d-0add7905b929)
+![Image](https://github.com/user-attachments/assets/3b9ab7aa-939c-4786-95c6-d8f093ebffc2)
+![Image](https://github.com/user-attachments/assets/fb83d804-11c7-4c1b-9257-7f6111575f89)
+![Image](https://github.com/user-attachments/assets/973c8e8a-0655-4381-9482-2a2eeecfc05a)
+![Image](https://github.com/user-attachments/assets/da91c04c-74f6-4558-bbd2-f0b78ddc5c6a)
+![Image](https://github.com/user-attachments/assets/79f28fba-0bb9-4c3d-ad1d-800ce48426fa)
+![Image](https://github.com/user-attachments/assets/9574b454-8cae-47cc-bd38-a821429d3fa2)
+![Image](https://github.com/user-attachments/assets/58ef98bf-13ac-4d47-a232-9a154a01fb61)
 
 
 
