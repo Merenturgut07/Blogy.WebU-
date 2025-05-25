@@ -73,3 +73,10 @@
 
 ![Image](https://github.com/user-attachments/assets/6926ac42-d923-42ec-a266-15bdd16fd57b)
 
+
+# Yazar Paneli Kayıt Olma Ve Giriş Yapma İşlemi
+<br/>
+
+![Image](https://github.com/user-attachments/assets/ab3893a2-ce1c-4efd-b396-607248dc5f73)
+![Image](https://github.com/user-attachments/assets/ff75e80c-74ce-4f96-9937-26cac45e21cc)
+
