@@ -67,3 +67,9 @@
 
 ![Image](https://github.com/user-attachments/assets/865aa35f-2728-428b-a0e8-f753ed7ea51b)
 
+
+# Yazarlarımız
+<br/>
+
+![Image](https://github.com/user-attachments/assets/6926ac42-d923-42ec-a266-15bdd16fd57b)
+
