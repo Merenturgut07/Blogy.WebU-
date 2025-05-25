@@ -35,7 +35,7 @@ namespace Blogy.BussinessLayer.Concrate
 
         public List<Comment> TGetListAll()
 		{
-			throw new NotImplementedException();
+			return _commentDal.GetListAll();
 		}
 
         public List<Comment> TGetListByFilter()
