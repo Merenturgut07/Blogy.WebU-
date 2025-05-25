@@ -44,6 +44,7 @@
 
 ### - Blogy projesi, modern web teknolojileriyle hazırlanmış, yönetimi kolay, kullanıcı dostu ve güvenli bir blog platformudur. Hem admin hem de yazarlar için ayrı panellerle iş akışını kolaylaştırırken, zengin özellikleri ile içerik üretimi ve yönetimini etkin hale getirmektedir. Eğitim sürecimde edindiğim deneyimleri bu proje aracılığıyla pekiştirmiş ve gerçek dünya uygulamalarına uygun bir çözüm geliştirmiş oldum.
 
+<br/>
 # Ana Sayfa 
 <br/>
 
@@ -61,19 +62,19 @@
 ![Image](https://github.com/user-attachments/assets/b92ea361-66ee-4043-a777-b5484e0110b6)
 ![Image](https://github.com/user-attachments/assets/55fceb95-5e6c-43e9-af96-472ae84aa593)
 
-
+<br/>
 # Yazarlarımız
 <br/>
 
 ![Image](https://github.com/user-attachments/assets/865aa35f-2728-428b-a0e8-f753ed7ea51b)
 
-
+<br/>
 # Yazarlarımız
 <br/>
 
 ![Image](https://github.com/user-attachments/assets/6926ac42-d923-42ec-a266-15bdd16fd57b)
 
-
+<br/>
 # Yazar Paneli Kayıt Olma Ve Giriş Yapma İşlemi
 <br/>
 
@@ -86,8 +87,9 @@
 ![Image](https://github.com/user-attachments/assets/bccdd6eb-f2b3-47d1-b46d-b97aa7be50d1)
 ![Image](https://github.com/user-attachments/assets/43fb824f-ea09-49e3-abee-aeeae9f8bba0)
 
-
-
+<br/>
+# Admin Paneli Sadece Yetkisi Admin Olan Kullanıcı Giriş Yapabiliyor 
+<br/>
 
 
 
