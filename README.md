@@ -55,6 +55,15 @@
 ![Image](https://github.com/user-attachments/assets/7dd1f785-9036-401a-bdb6-e7e6339d2c2c)
 ![Image](https://github.com/user-attachments/assets/dff4a677-2375-4a33-a9bd-d3a26d8e8ef7)
 
+
+<br/>
+
+# Hakkımızda
+<br/>
+
+
+
+
 <br/>
 
 # Hakkımızda
