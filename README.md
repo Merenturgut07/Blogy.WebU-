@@ -45,11 +45,19 @@
 ### - Blogy projesi, modern web teknolojileriyle hazırlanmış, yönetimi kolay, kullanıcı dostu ve güvenli bir blog platformudur. Hem admin hem de yazarlar için ayrı panellerle iş akışını kolaylaştırırken, zengin özellikleri ile içerik üretimi ve yönetimini etkin hale getirmektedir. Eğitim sürecimde edindiğim deneyimleri bu proje aracılığıyla pekiştirmiş ve gerçek dünya uygulamalarına uygun bir çözüm geliştirmiş oldum.
 
 # Ana Sayfa 
+<br/>
 
 ![Image](https://github.com/user-attachments/assets/0aee4370-c811-403b-82d2-5e3cf1461bdb)
 ![Image](https://github.com/user-attachments/assets/e21903dd-ca4b-4b2c-b165-07a2bc98a51a)
 ![Image](https://github.com/user-attachments/assets/7dd1f785-9036-401a-bdb6-e7e6339d2c2c)
 ![Image](https://github.com/user-attachments/assets/dff4a677-2375-4a33-a9bd-d3a26d8e8ef7)
 
+<br/>
 
+# Hakkımızda
+<br/>
+
+![Image](https://github.com/user-attachments/assets/f2bf5049-6385-4f2f-b850-2039e0bca0c0)
+![Image](https://github.com/user-attachments/assets/b92ea361-66ee-4043-a777-b5484e0110b6)
+![Image](https://github.com/user-attachments/assets/55fceb95-5e6c-43e9-af96-472ae84aa593)
 
